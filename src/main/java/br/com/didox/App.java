@@ -3,33 +3,46 @@ package br.com.didox;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 public class App {
-static Scanner scanner = new Scanner(System.in);
-    
 
     public static void main(String[] args) throws IOException {
-   
-BufferedReader reader = new BufferedReader(
-    new InputStreamReader(System.in));
-    
-    System.out.println("Digite  o Numero primerio");
 
-    String numero1 = reader.readLine();
+        /*
+         Exercicio 1
+         joão é  um professor de matematica e precisa de um programa
+         que faça o calculo da seguinte expressao:
+         (x*8 + 1) - x + y /100
+         faça um programa que resolva o problema da expressao qu o joao
+         precisa
+         Lembre-se pense na usabilidade
+         
+         */
+        BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Digite o valor da Variavel X:");
+        var x = Integer.parseInt(entrada.readLine());
 
-    System.out.println("Digite  o Numero Segundo");
+        System.out.println("Digite o valor da Variavel Y:");
+        var y = Integer.parseInt(entrada.readLine());
 
-    String numero2 = reader.readLine();
+        var resultado = (x * 8 + 1) - (x + y) / 100;
+
+        System.out.printf(
+    "O resultado da expressao (x * 8 +1) - (x + y)/100 " +
+    "usando o valor de x(%d) e y(%d) é %d", 
+    x, y, resultado);
 
 
 
-        
-       
 
-        System.out.printf("o numero é: %s\n",numero1);
-        System.out.printf("A soma do %s e do %s = %s\n", numero1,numero2,numero1+numero2);
-        
+
+                 // BufferedReader reader = new BufferedReader(
+                //         new InputStreamReader(System.in));
+                // System.out.println("Digite  o seu nome");
+                // var nome = reader.readLine();
+                // System.out.println("Digite a sua idade");
+                // int idade = Integer.parseInt(reader.readLine());
+                // System.out.printf("o nome e idade   são: %s e %d\n", nome, idade);
 
     }
 
