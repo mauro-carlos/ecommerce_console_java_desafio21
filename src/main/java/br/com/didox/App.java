@@ -25,25 +25,20 @@ public class App {
         System.out.println("Digite o valor da Variavel Y:");
         var y = Integer.parseInt(entrada.readLine());
 
-        var resultado = (x * 8 + 1) - (x + y) / 100;
+        var resultado = (x * 8 + y) - x + y / 100;
 
         System.out.printf(
-    "O resultado da expressao (x * 8 +1) - (x + y)/100 " +
-    "usando o valor de x(%d) e y(%d) é %d", 
-    x, y, resultado);
+                "O resultado da expressao (x * 8  1) - x + y /100 "
+                + "usando o valor de X(%d) e Y(%d) é %d",
+                x, y, resultado);
 
-
-
-
-
-                 // BufferedReader reader = new BufferedReader(
-                //         new InputStreamReader(System.in));
-                // System.out.println("Digite  o seu nome");
-                // var nome = reader.readLine();
-                // System.out.println("Digite a sua idade");
-                // int idade = Integer.parseInt(reader.readLine());
-                // System.out.printf("o nome e idade   são: %s e %d\n", nome, idade);
-
+        // BufferedReader reader = new BufferedReader(
+        //         new InputStreamReader(System.in));
+        // System.out.println("Digite  o seu nome");
+        // var nome = reader.readLine();
+        // System.out.println("Digite a sua idade");
+        // int idade = Integer.parseInt(reader.readLine());
+        // System.out.printf("o nome e idade   são: %s e %d\n", nome, idade);
     }
 
 }
